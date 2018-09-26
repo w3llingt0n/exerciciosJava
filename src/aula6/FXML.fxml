@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aula6.FXMLController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#novo" text="Novo" />
+                  <Menu mnemonicParsing="false" text="Colar">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#carregar" text="Colar Normal" />
+                      <MenuItem mnemonicParsing="false" onAction="#carregarN" text="Colar sem Formatação" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="principal" layoutY="27.0" prefHeight="372.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
